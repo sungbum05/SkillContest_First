@@ -39,7 +39,8 @@ public class Player : MonoBehaviour
         float Vertical = Input.GetAxisRaw("Vertical");
 
         this.transform.Translate(new Vector3(Horizontal, 0, Vertical) * MoveSpeed * Time.deltaTime);
-        this.transform.position = new Vector3(Mathf.Clamp(transform.position.x, BorderX.y, BorderX.x), this.transform.position.y, Mathf.Clamp(transform.position.z, BorderZ.y, BorderZ.x));
+        this.transform.position = new Vector3(Mathf.Clamp(transform.position.x, BorderX.y, BorderX.x), 
+            this.transform.position.y, Mathf.Clamp(transform.position.z, BorderZ.y, BorderZ.x));
     }
 
     void GunRotation()
