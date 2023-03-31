@@ -26,6 +26,10 @@ public class Player : MonoBehaviour
 
     public Transform BulletSpawnPos;
 
+    [Header("Attack - Skill")]
+    public KeyCode UseSkillKey1;
+    public KeyCode UseSkillKey2;
+
     // Update is called once per frame
     void Update()
     {
