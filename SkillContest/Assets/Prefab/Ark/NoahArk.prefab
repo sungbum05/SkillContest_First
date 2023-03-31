@@ -10069,7 +10069,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 3345
+  m_VersionIndex: 3348
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -10556,7 +10556,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 3722
+  m_VersionIndex: 3725
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -10711,7 +10711,7 @@ MonoBehaviour:
   MaxRot: 0
   MinRot: 0
   BulletPrefab: {fileID: 6936316603652320507, guid: f69fddb6d0260c040b88de14272247ee, type: 3}
-  BulletForce: 70
+  BulletForce: 130
   MaxAttackDelay: 0.1
   CurAttackDelay: 0
   BulletSpawnPos: {fileID: 762423260}
@@ -12342,7 +12342,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 1994
+  m_VersionIndex: 2000
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -14070,7 +14070,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 1991
+  m_VersionIndex: 1994
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -14481,7 +14481,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 5298
+  m_VersionIndex: 5301
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
