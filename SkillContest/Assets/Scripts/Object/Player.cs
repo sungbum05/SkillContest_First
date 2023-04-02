@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEditor.Progress;
 
 public class Player : MonoBehaviour
 {
@@ -24,7 +25,8 @@ public class Player : MonoBehaviour
     public float MaxAttackDelay;
     public float CurAttackDelay;
 
-    public Transform BulletSpawnPos;
+    public List<Transform> BulletSpawnPos;
+    public int SelectPos;
 
     [Header("Attack - Skill")]
     public KeyCode UseSkillKey1;
@@ -83,9 +85,13 @@ public class Player : MonoBehaviour
     {
         CurAttackDelay += MaxAttackDelay;
 
-        GameObject Bullet = Instantiate(BulletPrefab);
-        Bullet.transform.position = BulletSpawnPos.position;
+        for (int i = 0; i <= SelectPos; i++)
+        {
+            GameObject Bullet = Instantiate(BulletPrefab);
 
-        Bullet.GetComponent<Rigidbody>().AddForce(Gun.transform.forward * BulletForce, ForceMode.Impulse);
+            Bullet.transform.position = BulletSpawnPos[SelectPos].transform.GetChild(i).transform.position;
+
+            Bullet.GetComponent<Rigidbody>().AddForce(Gun.transform.forward * BulletForce, ForceMode.Impulse);
+        }
     }
 }
