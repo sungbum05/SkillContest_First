@@ -5,18 +5,25 @@ using UnityEngine;
 
 public class Skill1 : MonoBehaviour
 {
-    static Skill1 instance;
+    [Header("Attack - Skill")]
+    public KeyCode UseSkillKey1;
+    public KeyCode UseSkillKey2;
 
-    public float BombSpeed;
+    public GameObject BazierBulletPrefab;
 
-    public static void Skiil1Effect()
+    public float BulletSpeed;
+    public float ScPow;
+    public float ThiPow;
+
+    public GameObject Target;
+
+    private void Update()
     {
-        while (true)
+        if(Input.GetKey(UseSkillKey1))
         {
-            instance.gameObject.transform.localScale += Vector3.one * instance.BombSpeed * Time.deltaTime;
+            GameObject BazierBullet = Instantiate(BazierBulletPrefab);
 
-            
-                
+            BazierBullet.GetComponent<BazierBullet>().Init(this.transform, Target.transform, BulletSpeed, ScPow, ThiPow);
         }
     }
 }
